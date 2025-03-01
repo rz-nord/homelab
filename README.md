@@ -51,5 +51,7 @@ Networking is configured through unifi.
 
 ## Repos
 ### Proxmox workloads
-This repository and its gitlab pipeline manage the proxmox workloads. Everything is created via terraform wich state is stored on a share for now.
 [proxmox-workloads](https://github.com/rz-nord/proxmox-workloads)
+
+This repository and its gitlab pipeline manage the proxmox workloads. Everything is created via terraform wich state is stored on a share for now.
+
