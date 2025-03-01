@@ -12,6 +12,8 @@ Everything is subject to change.
 
 </div>
 
+---
+
 # Table of content
 - [Setup](#setup)
 - [Tools](#tools)
@@ -49,7 +51,11 @@ Networking is configured through unifi.
  - grafana
  - loki
 
+### CI/CD
+ - Gitlab CE 
+
 ## Repos
+
 ### Proxmox workloads
 [proxmox-workloads](https://github.com/rz-nord/proxmox-workloads)
 
