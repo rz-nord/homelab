@@ -1,8 +1,13 @@
 <div align="center">
-# homelab documentation
+
+# Homelab documentation
+
 </div>
 
-[[ TOC ]]
+# Table of content
+- [header2](#header-2)
+- [header3](#header-3)
+- [header4](#header-4)
 
 ## header 2
 ## header 3
