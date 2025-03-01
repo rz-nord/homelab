@@ -15,6 +15,7 @@ Everything is subject to change.
 # Table of content
 - [Setup](#setup)
 - [Tools](#tools)
+- [Repos](#repos)
 
 ## Setup
 
@@ -47,3 +48,8 @@ Networking is configured through unifi.
  - prometheus
  - grafana
  - loki
+
+## Repos
+### Proxmox workloads
+This repository and its gitlab pipeline manage the proxmox workloads. Everything is created via terraform wich state is stored on a share for now.
+[proxmox-workloads](https://github.com/rz-nord/proxmox-workloads)
