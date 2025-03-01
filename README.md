@@ -2,7 +2,7 @@
 # homelab documentation
 </div>
 
-__TOC__
+_TOC_
 
 ## header 2
 ## header 3
