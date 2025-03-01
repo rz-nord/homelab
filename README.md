@@ -33,13 +33,17 @@ Networking is configured through unifi
 ## Tools
 ### Virtualization
  - Proxmox
+---
 ### Containerization
  - docker
  - k3s
+---
 ### Configmanagement/IaC
  - ansible
  - terraform
+---
 ### Monitoring
  - prometheus
  - grafana
  - loki
+---
