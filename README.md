@@ -28,7 +28,7 @@ At the moment the setup consists of 4 physical servers.
 | node242 | Proxmox 8 | Proxmox Host |
 
 ### Network
-Networking is configured through unifi
+Networking is configured through unifi.
 
 ## Tools
 
