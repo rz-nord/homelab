@@ -31,20 +31,19 @@ At the moment the setup consists of 4 physical servers.
 Networking is configured through unifi
 
 ## Tools
----
+
 ### Virtualization
  - Proxmox
----
+
 ### Containerization
  - docker
  - k3s
----
+
 ### Configmanagement/IaC
  - ansible
  - terraform
----
+
 ### Monitoring
  - prometheus
  - grafana
  - loki
----
