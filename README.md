@@ -23,7 +23,7 @@ At the moment the setup consists of 4 physical servers.
 | Server | OS | Function | 
 | --- | --- | --- |
 | node010 | debian12 | Gitlab/base-infra |
-| node240 | PBS | Proxmox Backup Server / qDevice| 
+| node240 | PBS 3 | Proxmox Backup Server / qDevice| 
 | node241 | Proxmox 8 | Proxmox Host |
 | node242 | Proxmox 8 | Proxmox Host |
 
