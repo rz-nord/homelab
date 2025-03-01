@@ -1,6 +1,6 @@
 <div align="center">
 
-# Homelab documentation
+# Homelab documentation :rocket:
 
 </div>
 
