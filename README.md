@@ -18,7 +18,6 @@ Everything is subject to change.
 - [Setup](#setup)
     - [Why?](#why-did-i-do-it-this-way)
     - [Physical](#physical)
-    - [Network](#network)
 - [Tools](#tools)
     - [Virtualization](#virtualization)
     - [Containerization](#containerization)
@@ -49,9 +48,6 @@ At the moment the setup consists of 4 physical servers.
 | node240 | PBS 3 | Proxmox Backup Server / qDevice| 
 | node241 | Proxmox 8 | Proxmox Host |
 | node242 | Proxmox 8 | Proxmox Host |
-
-### Network
-Networking is configured through unifi.
 
 ## Tools
 
