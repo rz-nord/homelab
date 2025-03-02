@@ -1,12 +1,12 @@
 <div align="center">
 
-# Homelab documentation :rocket:
+# Homelab Documentation :rocket:
 
-This github-account is my attempt at documenting everything i do in my homelab.
+This GitHub account serves as documentation for everything I do in my homelab.
 
-I follow a multi-step setup approach, this is why there are multiple repos for multiple stages in this account.
+I follow a multi-step setup approach, which is why there are multiple repositories for different stages in this account.
 
-In its current form there are 11 repos. While this may be confusing for some, it works well for me so far.
+Currently, there are 11 repositories. While this may be confusing for some, it works well for me so far.
 
 Everything is subject to change.
 
@@ -14,65 +14,68 @@ Everything is subject to change.
 
 ---
 
-# Table of content
+# Table of Contents
 - [Setup](#setup)
     - [Why?](#why-did-i-do-it-this-way)
     - [Physical](#physical)
 - [Tools](#tools)
     - [Virtualization](#virtualization)
     - [Containerization](#containerization)
-    - [Configmanagement/IaC](#configmanagementiac)
+    - [Config Management/IaC](#config-managementiac)
     - [Monitoring](#monitoring)
     - [CI/CD](#cicd)
-- [Repos](#repos)
+- [Repositories](#repositories)
     - [Proxmox Workloads](#proxmox-workloads)
 
 ## Setup
 
-I split the setup in stacks. One for my docker-hosts, one for k3s... you get the gist.
-The virtual machines for each stack are stored in the [proxmox-workloads](https://github.com/rz-nord/proxmox-workloads) repostitory.
-Most stacks contain two seperate steps. Due to restrictions in gitlab each step is in its own repository. The most of the time the first step runs ansible to install all prerequisites, while the second step actually deploys services to the stack.
+I split the setup into stacks: one for my Docker hosts, one for K3s... you get the idea. The virtual machines for each stack are managed in the [proxmox-workloads](https://github.com/rz-nord/proxmox-workloads) repository.
 
-### Why did i do it this way?
-- Gitlab currently only allows one repostitory per project. If i maybe move to another solution in the future this will be restructured
-- I want to have separation between my stacks
-- I want to handle the hosts and the services seperateley. Theres no need to run through all the code if i simply want to deploy a new service to a stack
-- Gitlab is used instead of gitea because its closer to the tools i use at work
-- The ansible/.env/docker-compose.yml setup ensures that i have all the needed files on the host in case something breaks or i decide to stop using ci/cd
+Most stacks consist of two separate steps. Due to restrictions in GitLab, each step is in its own repository. Most of the time, the first step uses Ansible to install all prerequisites, while the second step deploys the actual services to the stack.
+
+### Why did I do it this way?
+- GitLab currently allows only one repository per project. If I move to another solution in the future, I will restructure this setup.
+- I want a clear separation between my stacks.
+- I want to separate host management from service deployment. There’s no need to run through all the code if I just want to deploy a new service to a stack.
+- GitLab is used instead of Gitea because it is closer to the tools I use at work.
+- The Ansible/.env/docker-compose.yml setup ensures that all necessary files are on the host in case something breaks or I decide to stop using CI/CD.
 
 ### Physical
-At the moment the setup consists of 4 physical servers.
-| Server | OS | Function | 
-| --- | --- | --- |
-| node010 | debian12 | Gitlab/base-infra |
-| node240 | PBS 3 | Proxmox Backup Server / qDevice| 
-| node241 | Proxmox 8 | Proxmox Host |
-| node242 | Proxmox 8 | Proxmox Host |
+
+The homelab consists of four physical servers with the following roles:
+
+| Server  | OS       | Function                          |
+|---------|---------|----------------------------------|
+| node010 | Debian 12 | GitLab/Base Infrastructure      |
+| node240 | PBS 3   | Proxmox Backup Server / qDevice |
+| node241 | Proxmox 8 | Proxmox Host                    |
+| node242 | Proxmox 8 | Proxmox Host                    |
 
 ## Tools
 
 ### Virtualization
- - Proxmox
+- Proxmox
 
 ### Containerization
- - docker
- - k3s
+- Docker
+- K3s
 
-### Configmanagement/IaC
- - ansible
- - terraform
+### Config Management/IaC
+- Ansible
+- Terraform
 
 ### Monitoring
- - prometheus
- - grafana
- - loki
+- Prometheus
+- Grafana
+- Loki
 
 ### CI/CD
- - Gitlab CE 
+- GitLab CE
 
-## Repos
+## Repositories
 
-### Proxmox workloads
+### Proxmox Workloads
 [proxmox-workloads](https://github.com/rz-nord/proxmox-workloads)
 
-This repository and its gitlab pipeline manage the proxmox workloads. Everything is created via terraform wich state is stored on a share for now.
+This repository, along with its GitLab pipeline, manages the Proxmox workloads. Everything is created via Terraform, with its state currently stored on a shared storage.
+
