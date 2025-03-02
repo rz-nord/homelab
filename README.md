@@ -79,10 +79,11 @@ The homelab consists of four physical servers with the following roles:
 ## Stacks
 
 ### Base
-The first layer in the setup. It runs GitLab, the GitLab runners, and some ground-level services like SMB for shares and a registry.
+The first layer in the setup. It runs GitLab, the GitLab runners, and some ground-level services like SMB for shares and a registry. Also builds images for use in Gitlab pipelines.
 #### Repositories (coming soon)
 - [base-ansible](https://github.com/rz-nord)
 - [base-container](https://github.com/rz-nord)
+- [base-images](https://github.com/rz-nord)
 
 ### Infra
 This is the second layer. It runs services like monitoring, log aggregation, and notifications. It also deploys a Traefik reverse proxy in a DMZ subnet.
