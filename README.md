@@ -39,6 +39,7 @@ Most stacks contain two seperate steps. Due to restrictions in gitlab each step 
 - I want to have separation between my stacks
 - I want to handle the hosts and the services seperateley. Theres no need to run through all the code if i simply want to deploy a new service to a stack
 - Gitlab is used instead of gitea because its closer to the tools i use at work
+- The ansible/.env/docker-compose.yml setup ensures that i have all the needed files on the host in case something breaks or i decide to stop using ci/cd
 
 ### Physical
 At the moment the setup consists of 4 physical servers.
