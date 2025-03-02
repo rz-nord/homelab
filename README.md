@@ -20,7 +20,13 @@ Everything is subject to change.
     - [Physical](#physical)
     - [Network](#network)
 - [Tools](#tools)
+    - [Virtualization](#virtualization)
+    - [Containerization](#containerization)
+    - [Configmanagement/IaC](#configmanagementiac)
+    - [Monitoring](#monitoring)
+    - [CI/CD](#cicd)
 - [Repos](#repos)
+    - [Proxmox Workloads](#proxmox-workloads)
 
 ## Setup
 
