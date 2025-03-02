@@ -16,6 +16,9 @@ Everything is subject to change.
 
 # Table of content
 - [Setup](#setup)
+    - [Why?](#why-did-i-do-it-this-way)
+    - [Physical](#physical)
+    - [Network](#network)
 - [Tools](#tools)
 - [Repos](#repos)
 
