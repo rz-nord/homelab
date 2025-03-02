@@ -80,28 +80,28 @@ The homelab consists of four physical servers with the following roles:
 
 ### Base
 The first layer in the setup. It runs GitLab, the GitLab runners, and some ground-level services like SMB for shares and a registry. Also builds images for use in Gitlab pipelines.
-#### Repositories (coming soon)
-- [base-ansible](https://github.com/rz-nord)
-- [base-container](https://github.com/rz-nord)
-- [base-images](https://github.com/rz-nord)
+#### Repositories
+- [base-ansible](https://github.com/rz-nord) (coming soon)
+- [base-container](https://github.com/rz-nord) (coming soon)
+- [base-images](https://github.com/rz-nord/base-images)
 
 ### Infra
 This is the second layer. It runs services like monitoring, log aggregation, and notifications. It also deploys a Traefik reverse proxy in a DMZ subnet.
-#### Repositories (coming soon)
-- [infra-ansible](https://github.com/rz-nord)
-- [infra-container](https://github.com/rz-nord)
+#### Repositories
+- [infra-ansible](https://github.com/rz-nord) (coming soon)
+- [infra-container](https://github.com/rz-nord) (coming soon)
 
 ### Docker
 Docker stack. Provides a runtime environment for Docker containers and services deployed to it.
-#### Repositories (coming soon)
-- [docker-ansible](https://github.com/rz-nord)
-- [docker-container](https://github.com/rz-nord)
+#### Repositories
+- [docker-ansible](https://github.com/rz-nord) (coming soon)
+- [docker-container](https://github.com/rz-nord) (coming soon)
 
 ### k3s
 K3s stack. Provides a K3s cluster and services deployed to it.
-#### Repositories (coming soon)
-- [k3s-ansible](https://github.com/rz-nord)
-- [k3s-container](https://github.com/rz-nord)
+#### Repositories
+- [k3s-ansible](https://github.com/rz-nord) (coming soon)
+- [k3s-container](https://github.com/rz-nord) (coming soon)
 
 ### Proxmox Workloads
 Manages the Proxmox workloads. Everything is created via Terraform, with its state currently stored on a share.
